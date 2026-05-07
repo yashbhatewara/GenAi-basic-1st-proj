@@ -3,6 +3,7 @@ langchain-core
 langchain-community
 langchain-openai
 langchain-mistralai
+langchain-nvidia-ai-endpoints
 openai
 mistralai
 chromadb

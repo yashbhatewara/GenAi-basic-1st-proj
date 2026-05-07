@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
-from langchain_openai import OpenAIEmbeddings
+from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_mistralai import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
-embedding_model = OpenAIEmbeddings()
+embedding_model = NVIDIAEmbeddings(model="nvidia/nv-embedqa-e5-v5")
 
 vectorstore = Chroma(
     persist_directory= "chroma_db",
