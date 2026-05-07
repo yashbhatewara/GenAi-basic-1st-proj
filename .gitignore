@@ -1,5 +1,17 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
 *.py[codz]
 *$py.class
 
@@ -21,11 +33,13 @@ sdist/
 var/
 wheels/
 share/python-wheels/
+pip-wheel-metadata/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
+<<<<<<< HEAD
 # PyInstaller
 #   Usually these files are written by a python script from a template
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -216,3 +230,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+=======
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Vector Database (generated at runtime)
+chroma_db/
+chroma-db/
+*.sqlite3
+
+# PDFs and test files
+*.pdf
+
+# Temporary Files
+*.tmp
+*.temp
+.ipynb_checkpoints/
+.python-version
+>>>>>>> 9669ea0 (Initial commit: RAG document Q&A system with core project files)
